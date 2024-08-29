@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "@icehouse/universal--web--libraries--guc-type-plugin-margin",
+  "version": "0.3.0",
+  "main": "index.js",
+  "scripts": {
+    "publish": "rimraf dist && tsc && cpy README.md .npmignore dist && package-json-minifier && dts-bundle-generator index.ts -o dist/index.d.ts && cd dist && npm publish"
+  },
+  "author": "Juyeong Maing <mjy9088@naver.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/i6e/universal--web--libraries--guc-type-plugin-margin.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cpy-cli": "^5.0.0",
+    "dts-bundle-generator": "^9.5.1",
+    "mkdirp": "^3.0.1",
+    "package.json-minifier": "^0.0.4",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "@icehouse/universal--web--libraries--guc-core": "^0.3.0"
+  }
+}
