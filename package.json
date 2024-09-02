@@ -2,7 +2,6 @@
   "private": true,
   "name": "@icehouse/universal--web--libraries--guc-type-plugin-margin",
   "version": "0.3.0",
-  "main": "index.js",
   "scripts": {
     "publish": "rimraf dist && tsc && cpy README.md .npmignore dist && package-json-minifier && dts-bundle-generator index.ts -o dist/index.d.ts && cd dist && npm publish"
   },
